@@ -1,3 +1,5 @@
+document.ready(function() {
+
 var settings = {
   "url": "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=HEDTKD",
   "method": "GET",
@@ -10,4 +12,5 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
+});
 });
